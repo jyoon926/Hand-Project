@@ -10,7 +10,7 @@ factor = (rawWidth / width)**2;
 image = new Image();
 
 function start() {
-    image.src = 'Hand Solid ' + width + '.png';
+    image.src = 'img/Hand Solid ' + width + '.png';
     image.onload = function(){
         context.drawImage(image, 0, 0, width, width);
     }
@@ -54,7 +54,7 @@ function SetSize() {
     document.getElementById("canvas").height = s;
     width = s;
     factor = (rawWidth / width)**2;
-    image.src = 'Hand Solid ' + width + '.png';
+    image.src = 'img/Hand Solid ' + width + '.png';
     image.onload = function(){
         context.drawImage(image, 0, 0, width, width);
     }
