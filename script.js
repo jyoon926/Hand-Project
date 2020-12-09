@@ -27,13 +27,13 @@ function compute() {var imgData = context.getImageData(0, 0, width, width);
         }
     }
     print(
-        "Image Width = " + width + " pixels" + "<br />"
-        + "Actual Width = " + Math.sqrt(width**2 * factor) + " centimeters" + "<br />"
-        + "1 pixel = " + factor.toFixed(6) + " square centimeters" + "<br />"
-        + "Image Area = " + width**2 + " pixels" + "<br />"
-        + "Hand Area = " + sum + " pixels" + "<br /><br />"
-        + "Hand Area = " + (sum * factor).toFixed(3) + " square centimeters" + "<br />"
-        + "Hand Area = " + (sum * factor / 6.452).toFixed(3) + " square inches"
+        "Image Width = " + width + " px" + "<br />"
+        + "Actual Width = " + Math.sqrt(width**2 * factor) + " cm" + "<br />"
+        + "1 px = " + factor.toFixed(6) + " cm^2" + "<br />"
+        + "Image Area = " + width**2 + " px" + "<br />"
+        + "Hand Area = " + sum + " px" + "<br /><br />"
+        + "Hand Area = " + (sum * factor).toFixed(3) + " cm^2" + "<br />"
+        + "Hand Area = " + (sum * factor / 6.452).toFixed(3) + " in^2"
     );
 }
 
