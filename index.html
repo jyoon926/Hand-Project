@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="start()">
+    <div id="parent">
+        <canvas id="canvas" width="256" height="256"></canvas>
+    </div>
+
+    <p>Image Size:</p>
+    <select id="size" onchange="SetSize()">
+        <option value="256">256px</option>
+        <option value="512">512px</option>
+        <option value="1024">1024px</option>
+        <option value="2048">2048px</option>
+        <option value="4096">4096px</option>
+    </select>
+
+    <a onclick="compute()" class="button">Compute the area</a>
+    <div id="log">Output</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
