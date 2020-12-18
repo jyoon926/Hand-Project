@@ -90,6 +90,42 @@ a{
     }
 
 }
+@media screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .mast {
+            margin: 0;
+        }
+        #nav {
+            flex-direction: column;
+            margin-top: 20px;
+            h2{
+                margin: 0;
+                font-size: 26px;
+                color: rgba(black, 0.4);
+                transition: 0.2s ease;
+            }
+        }
+    }
+    .main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+    }
+    #display {
+        margin: 20px;
+    }
+    #log {
+        height: 500px;
+        width: calc(100vw - 40px);
+        margin: 20px;
+        box-sizing: border-box;
+        padding: 3vw;
+    }
+}
 
 #select{
     display: flex;
