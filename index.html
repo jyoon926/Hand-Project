@@ -3,26 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hand Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <title> Hand Project </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="start()">
-    <div id="parent">
-        <canvas id="canvas" width="256" height="256"></canvas>
+<body>
+
+    <div class = 'header'>
+        <div class = 'mast'>
+            <h1>Hand Project</h1>
+            <h3>Jacob Yoon • Heewon Ahn • Jack Frazier • Benigno McKain</h3>
+        </div>
+        <div id = 'nav'>
+            <a href = 'index.html'>
+                <h2 class = 'selected'> Home </h2>
+            </a>
+            <a href = 'about.html'>
+                <h2> Explanation </h2>
+            </a>
+            <a href = 'analysis.html'>
+                <h2> Analysis </h2>
+            </a>
+        </div>
     </div>
 
-    <p>Image Size:</p>
-    <select id="size" onchange="SetSize()">
-        <option value="256">256px</option>
-        <option value="512">512px</option>
-        <option value="1024">1024px</option>
-        <option value="2048">2048px</option>
-        <option value="4096">4096px</option>
-    </select>
+    <div class = 'main'>
 
-    <a onclick="compute()" class="button">Compute the area</a>
-    <div id="log">Output</div>
+        <div id = 'select'>
+            <p class = 'label'>
+                Hand
+            </p>
+            <select id="hand">
+                <option value="jacob">Jacob Yoon</option>
+                <option value="heewon">Heewon Ahn</option>
+                <option value="jack">Jack Frazier</option>
+                <option value="benigno">Benigno McKain</option>
+            </select>
+            <p class = 'label'>
+                Image Size
+            </p>
+            <select id="size">
+                <option value="32"> 32px</option>
+                <option value="128"> 128px</option>
+                <option value="512"selected> 512px</option>
+                <option value="2048"> 2048px</option>
+            </select>
+            <button id = 'calculate'> Calculate </button>
+        </div>
+        <div id = 'display'>
+            <canvas id = 'canvas'> </canvas>
+            <canvas id = 'effects'> </canvas>
+        </div>
 
-    <script src="script.js"></script>
+        <p id = 'log'>
+            Ready to Calculate
+        </p>
+    </div>
+
 </body>
+
+<script src="script.js"></script>
 </html>
