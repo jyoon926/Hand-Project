@@ -45,6 +45,9 @@ function Resize(){
         case 'benigno':
             rawWidth = 21.0;
             break;
+        case 'jack':
+            rawWidth = 22.0;
+            break;
         default:
             rawWidth = 20;
             break;
